@@ -2,8 +2,8 @@ iris.path = {
     screen: {
         welcome: {html: "screen/welcome.html", js: "screen/welcome.js"}
     },
-    ui:{
-        todo:{html:"ui/todo.html",js:"ui/todo.js"}
+    ui: {
+        todo: {html: "ui/todo.html", js: "ui/todo.js"}
     }
 };
 
