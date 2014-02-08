@@ -3,7 +3,11 @@ iris.screen(function (self) {
     self.tmpl(iris.path.screen.welcome.html);
     
     self.get("add").click(function(){
-        self.ui("todoList",iris.path.ui.todo.js,{text:self.get("todoText").val()});
+        var todo = {
+            text:self.get("todoText").val(),
+            status:'incomplete'
+        };
+        self.ui("todoList",iris.path.ui.todo.js,{todo:todo});
     })
   };
 
