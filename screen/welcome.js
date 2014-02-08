@@ -1,8 +1,11 @@
 iris.screen(function (self) {
 
-  self.create = function() {
+  self.create = function() {    
     self.tmpl(iris.path.screen.welcome.html);
     
+    self.get("add").click(function(){
+        self.ui("todoList",iris.path.ui.todo.js);
+    })
   };
 
 },iris.path.screen.welcome.js);
